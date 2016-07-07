@@ -1,0 +1,23 @@
+{
+  "name": "reactive-backbone",
+  "homepage": "https://github.com/anestor-sugar/reactive-backbone",
+  "authors": [
+    "Andrew Nester <anestor@sugarcrm.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "react": "^15.2.0",
+    "requirejs": "^2.2.0",
+    "jquery": "^3.0.0"
+  }
+}
