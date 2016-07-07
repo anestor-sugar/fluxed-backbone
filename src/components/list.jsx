@@ -38,8 +38,10 @@ define([
         render: function() {
             return (
                 <div className="todoList">
-                    Hello, I am a TodoList.
-                    {this.state.rows}
+                    <h2>Hello, I am a TodoList.</h2>
+                    <ul className="list-group">
+                        {this.state.rows}
+                    </ul>
                     <NewTodo />
                 </div>
             );

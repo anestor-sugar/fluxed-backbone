@@ -42,13 +42,13 @@ define([
         render: function() {
             var title = this.props.model.get('title');
             return (
-                <li className="todoItem">
+                <li className="todoItem list-group-item">
                     { !this.state.editMode ?
                         <Checkbox onClick={this.handleToggle} checked={this.state.completed}/> : null }
                     { !this.state.editMode ? <TodoTitle title={title} completed={this.state.completed}/> : null }
 
-                    { !this.state.editMode ? <Button onClick={this.handleEnterEditMode} text="Edit"/> : null }
                     { !this.state.editMode ? <Button onClick={this.handleRemove} text="Remove"/> : null }
+                    { !this.state.editMode ? <Button onClick={this.handleEnterEditMode} text="Edit"/> : null }
                     
                     { this.state.editMode ? <EditTodo value={title} model={this.props.model}/> : null }
                 </li>

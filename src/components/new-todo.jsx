@@ -15,18 +15,22 @@ define(['jquery', 'react', 'app/actions/todo-actions'], function($, React, TodoA
             if (e.which !== 13 || !$input.val().trim()) {
                 return;
             }
-            
+
             TodoActions.create($input.val().trim());
             $input.val('');
         },
 
         render: function() {
             return (
-                <input
-                    type="text"
-                    id="new-todo"
-                    defaultValue={this.props.value}
-                />
+                <div>
+                    <label>New Item</label>
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="new-todo"
+                        defaultValue={this.props.value}
+                    />
+                </div>
             );
         }
     });
